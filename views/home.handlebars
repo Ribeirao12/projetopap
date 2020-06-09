@@ -1,2 +1,22 @@
-<h1> esta é a minha handlebar </h1>
-<p>{{ coisas }} </p1>
+{{posted_stuff}}<br/>
+
+ <div class="jumbotron">
+  <h1 class="display-4">{{ stock.companyName }} ({{ stock.symbol}})</h1>
+
+<strong>Recentemente:</strong>{{stock.latestPrice}}€<br/>
+<strong>Ateriormente: </strong> {{ stock.previousClose}}€<br/>
+<strong>Mudança Percentual </strong>{{stock.changePercent}}%<br/>
+<strong>Valor da Empresa: </strong>{{ stock.marketCap}}€<br/>
+<strong>inicio do ano até agora: </strong>{{ stock.ytdChange}}%<br/>
+<strong>Valor mais alto nas ultimas 52 semanas: </strong>{{ stock.week52High}}€<br/>
+<strong>Valor mais baixo nas ultimas 52 semanas: </strong>{{ stock.week52Low}}€<br/></p></p>
+
+</div>
+
+
+ <!--
+<br/><br/>
+{{#each stock}}
+		{{@key}} | {{this}} <br/>
+{{/each}}
+-->
