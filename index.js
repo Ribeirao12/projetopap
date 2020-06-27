@@ -34,7 +34,7 @@ app.set('view engine', 'handlebars');
 app.get('/about.html', function (req, res) {
     res.render('home', {});
 });
-// criar um caminho para a handlebar index GET
+// criar um caminho para a pagina home index GET
 app.get('/', function (req, res) {
 	call_api(function(doneAPI) {
 			res.render('home', {
